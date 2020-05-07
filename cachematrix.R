@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix())
         inverseMatrix <<- NULL
     }
     
-    getMatrix <- function(x)                               #get the value of the Matrix
+    getMatrix <- function()x                               #get the value of the Matrix
         setInverse <- function(inverse) inverseMatrix <<- inverse  #set the value of the invertible matrix
     getInverse <- function() inverseMatrix                     #get the value of the invertible matrix
     list(setMatrix = setMatrix, getMatrix = getMatrix,
